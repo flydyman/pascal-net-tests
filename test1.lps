@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="11"/>
+    <BuildModes Active="lin64"/>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="test1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="dbmanager.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="dbManager"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="26" Y="14"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="srvconsts.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="srvConsts"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="4"/>
+        <CursorPos X="3" Y="17"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="srvvars.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="srvVars"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="6"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+      </Unit3>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
