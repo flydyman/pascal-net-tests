@@ -8,6 +8,7 @@
         <Filename Value="test1.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
+        <CursorPos X="35" Y="3"/>
         <UsageCount Value="42"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -26,7 +27,6 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="srvConsts"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="4"/>
         <CursorPos X="3" Y="17"/>
         <UsageCount Value="42"/>
         <Loaded Value="True"/>
@@ -36,12 +36,15 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="srvVars"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="6"/>
         <UsageCount Value="42"/>
         <Loaded Value="True"/>
       </Unit3>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="1">
+      <Position1>
+        <Filename Value="test1.lpr"/>
+      </Position1>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="0" ActiveMode=""/>
