@@ -1,14 +1,17 @@
 # pascal-net-tests
 Pascal Net Tests<br>
-This is Initial commit, so there is nothing to do atm. Keep in mind: I've just started.<br>
+This was Initial commit, so there is nothing to do atm. Just keep in mind: I've just started.<br>
 furaidi<br>
 
-<code>
- {$IFNDEF SOLARIS}<br>
-         {$linklib libmysqlclient}<br>
-     {$IFEND}<br>
-     {$IFDEF UNIX}<br>
-         {$linklib libz}<br>
-         {$linklib libgcc}<br>
-     {$IFEND}<br>
-</code>
+What does it contain:
+ - srvVars.pas - server variables
+ - srvConsts.pas - server constants
+ - dbManager.pas - custom DB manager with MySQL 5.7 support (other DBs will be added ASAP (or never))
+ - test1.lpr - initial tests (connect to db etc)
+
+Is it builds?
+ - yes (linux-i386, linux-x86_64, win32, win64)
+ 
+Is it tested somehow?
+ - yes (linux-i386, linux-x86_64)
+ - no (win32, win64) - reason: I don't have any atm
