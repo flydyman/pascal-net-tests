@@ -8,7 +8,9 @@ uses
   Classes, SysUtils;
 
 const
-  db_host = '192.168.1.7';
+  // Here will be stored our server constants
+  // 1. DB constants
+  db_host = 'localhost';//that is my home server: '192.168.1.7';
   db_port = '3306';
   db_name = 'dev_testo';
   db_user = 'testo';

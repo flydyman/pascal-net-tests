@@ -7,19 +7,19 @@
       <Unit0>
         <Filename Value="test1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <CursorPos X="35" Y="3"/>
-        <UsageCount Value="42"/>
+        <CursorPos X="17" Y="9"/>
+        <UsageCount Value="67"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="dbmanager.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="dbManager"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="7"/>
-        <CursorPos X="26" Y="14"/>
-        <UsageCount Value="42"/>
+        <TopLine Value="49"/>
+        <CursorPos X="32" Y="61"/>
+        <UsageCount Value="67"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -27,8 +27,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="srvConsts"/>
         <EditorIndex Value="3"/>
-        <CursorPos X="3" Y="17"/>
-        <UsageCount Value="42"/>
+        <TopLine Value="5"/>
+        <CursorPos X="25" Y="13"/>
+        <UsageCount Value="67"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -36,14 +37,44 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="srvVars"/>
         <EditorIndex Value="2"/>
-        <UsageCount Value="42"/>
+        <TopLine Value="10"/>
+        <CursorPos X="29" Y="23"/>
+        <UsageCount Value="67"/>
         <Loaded Value="True"/>
       </Unit3>
     </Units>
-    <JumpHistory Count="1">
+    <JumpHistory Count="8" HistoryIndex="7">
       <Position1>
         <Filename Value="test1.lpr"/>
       </Position1>
+      <Position2>
+        <Filename Value="dbmanager.pas"/>
+        <Caret Line="44" Column="4" TopLine="38"/>
+      </Position2>
+      <Position3>
+        <Filename Value="dbmanager.pas"/>
+        <Caret Line="20" Column="24" TopLine="13"/>
+      </Position3>
+      <Position4>
+        <Filename Value="test1.lpr"/>
+        <Caret Line="9" Column="17"/>
+      </Position4>
+      <Position5>
+        <Filename Value="srvconsts.pas"/>
+        <Caret Line="13" Column="25" TopLine="5"/>
+      </Position5>
+      <Position6>
+        <Filename Value="dbmanager.pas"/>
+        <Caret Line="31" Column="45" TopLine="22"/>
+      </Position6>
+      <Position7>
+        <Filename Value="dbmanager.pas"/>
+        <Caret Line="49" Column="10" TopLine="33"/>
+      </Position7>
+      <Position8>
+        <Filename Value="dbmanager.pas"/>
+        <Caret Line="58" Column="27" TopLine="52"/>
+      </Position8>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
