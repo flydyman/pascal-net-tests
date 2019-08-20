@@ -5,7 +5,7 @@ unit dbManager;
 interface
 
 uses
-  Classes, SysUtils, mysql57dyn, srvConsts, srvVars, db, sqldb;
+  Classes, SysUtils, mysql57conn, srvConsts, srvVars, db, sqldb;
 
 type
   TDBMgr = class
@@ -13,7 +13,7 @@ type
     fConn: TSQLConnector;
     fQuery: TSQLQuery;
     fField: TField;
-    fList: Tstrings;
+    //fList: Tstrings;
     //fDBCon : integer;
   public
     procedure LoadConfig;
@@ -44,6 +44,7 @@ begin
       if fField.IsNull then ConfigLines[i,j]:='NULL'
         else ConfigLines[i,j]:=fField.Value;
       Inc(j);
+      write ('   ||   ');
     end;
     writeLn;
     fQuery.Next;
@@ -51,6 +52,13 @@ begin
   end;
   // Close Query
   fQuery.Close;
+  // Little test: Displaying array
+  WriteLn('Displaying ConfigLines:');
+  for i:=0 to High(ConfigLines) do begin
+    for j:=0 to High(ConfigLines[i]) do
+      Write(ConfigLines[i,j],'  |  ');
+    WriteLn;
+  end;
 end;
 
 constructor TDBMgr.Create;
@@ -58,20 +66,22 @@ var
   i: word;
 begin
   //InitialiseMySQL;
-  fList:= TStrings.Create;
+  //fList:= TStrings.Create;
   //GetConnectionList(fList);
   //for i:= 0 to fList.Count do WriteLn(FList.Text[i]);
   //fList.Free;
   fConn := TSQLConnector.Create(nil);
   with fConn do begin
     // How to point to mysql5.7 ?
-    ConnectorType := 'libmysql';
+    //ConnectorType := mysqlvlib;
+    ConnectorType := 'mysql 5.7';
     HostName := db_host;
     DatabaseName:= db_Name;
     UserName:=db_user;
     Password:=db_pass;
     Transaction:=TSQLTransaction.Create(nil);
   end;
+  WriteLn('Connected');
   fQuery:=TSQLQuery.Create(nil);
   fQuery.Database:=fConn;
 end;

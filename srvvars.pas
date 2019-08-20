@@ -10,7 +10,7 @@ uses
 type
   // x - rows
   // y - cols
-  TConfigLines = array of array [0..1] of string;
+  TConfigLines = array of array [0..2] of string;
 
   TVerifyMail = record
     Subject: string;
