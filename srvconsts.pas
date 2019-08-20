@@ -18,6 +18,12 @@ const
   db_conf = 'config';
 
 
+  // 2. Config values
+  cfg_Verify_Subject = 'VerifySubject';
+  cfg_Verify_URL = 'VerifyUrl';
+  cfg_Verify_Line1 = 'Verify01';
+  cfg_Verify_Line2 = 'Verify02';
+  cfg_Verify_Line3 = 'Verify03';
 
 implementation
 

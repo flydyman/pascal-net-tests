@@ -33,25 +33,28 @@ begin
   fQuery.Open;
   i:=0;
   // Fetching
+  /// TODO: try/except must be added
   SetLength(ConfigLines,fQuery.RecordCount);
   while not fQuery.EOF do begin
     j:=0;
     for fField in fQuery.Fields do begin
+      /// TODO: output must be removed after tests
       // Fetch rows to tty (for testing)
-      Write (fField.FieldName, ' = ');
-      if fField.IsNull then write ('NULL')else write(fField.Value);
+      //Write (fField.FieldName, ' = ');
+      //if fField.IsNull then write ('NULL')else write(fField.Value);
       // Now the same rows into variable
       if fField.IsNull then ConfigLines[i,j]:='NULL'
         else ConfigLines[i,j]:=fField.Value;
       Inc(j);
-      write ('   ||   ');
+      //write ('   ||   ');
     end;
-    writeLn;
+    //writeLn;
     fQuery.Next;
     Inc(i);
   end;
   // Close Query
   fQuery.Close;
+  /// TODO: Theese lines must be removed after tests
   // Little test: Displaying array
   WriteLn('Displaying ConfigLines:');
   for i:=0 to High(ConfigLines) do begin
