@@ -18,7 +18,7 @@ const
   db_conf = 'config';
 
 
-  // 2. Config values
+  // 2. Config values to simplify searching
   cfg_Verify_Subject = 'VerifySubject';
   cfg_Verify_URL = 'VerifyUrl';
   cfg_Verify_Line1 = 'Verify01';

@@ -5,7 +5,7 @@ unit srvVars;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils, srvConsts;
 
 type
   // x - rows
@@ -21,7 +21,22 @@ type
 var
   VerifyMail: TVerifyMail;
   ConfigLines: TConfigLines;
+
+function GetConfigValue(Parameter: string):string;
+
 implementation
+
+function GetConfigValue(Parameter: string):string;
+var
+  i: word;
+  res: string;
+begin
+  res:='';
+  for i:= 0 to High(ConfigLines) do
+    if ConfigLines[i,1] = Parameter then res:= ConfigLines[i,2];
+
+  GetConfigValue:=res;
+end;
 
 end.
 

@@ -7,19 +7,19 @@
       <Unit0>
         <Filename Value="test1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <CursorPos X="39" Y="10"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="dbmanager.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="dbManager"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="51"/>
-        <CursorPos X="51" Y="41"/>
-        <UsageCount Value="71"/>
+        <TopLine Value="56"/>
+        <CursorPos X="12" Y="71"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -27,9 +27,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="srvConsts"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="11"/>
-        <CursorPos X="31" Y="26"/>
-        <UsageCount Value="71"/>
+        <TopLine Value="14"/>
+        <CursorPos X="33" Y="26"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -37,13 +37,13 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="srvVars"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="4"/>
-        <CursorPos X="38" Y="13"/>
-        <UsageCount Value="71"/>
+        <TopLine Value="8"/>
+        <CursorPos X="22" Y="38"/>
+        <UsageCount Value="73"/>
         <Loaded Value="True"/>
       </Unit3>
     </Units>
-    <JumpHistory Count="11" HistoryIndex="10">
+    <JumpHistory Count="12" HistoryIndex="11">
       <Position1>
         <Filename Value="test1.lpr"/>
       </Position1>
@@ -87,6 +87,10 @@
         <Filename Value="test1.lpr"/>
         <Caret Line="4" Column="60"/>
       </Position11>
+      <Position12>
+        <Filename Value="dbmanager.pas"/>
+        <Caret Line="66" Column="45" TopLine="55"/>
+      </Position12>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
