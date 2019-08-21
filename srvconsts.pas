@@ -25,6 +25,11 @@ const
   cfg_Verify_Line2 = 'Verify02';
   cfg_Verify_Line3 = 'Verify03';
 
+  // 3. Server statuses
+  ss_Init = 0;
+  ss_Run = 1;
+  ss_Exiting = 2;
+
 implementation
 
 end.

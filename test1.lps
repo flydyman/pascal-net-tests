@@ -3,33 +3,32 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="lin64"/>
-    <Units Count="4">
+    <Units Count="5">
       <Unit0>
         <Filename Value="test1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="39" Y="10"/>
-        <UsageCount Value="73"/>
+        <CursorPos X="6" Y="10"/>
+        <UsageCount Value="76"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="dbmanager.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="dbManager"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="56"/>
-        <CursorPos X="12" Y="71"/>
-        <UsageCount Value="73"/>
+        <TopLine Value="83"/>
+        <CursorPos X="6" Y="97"/>
+        <UsageCount Value="76"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="srvconsts.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="srvConsts"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="14"/>
-        <CursorPos X="33" Y="26"/>
-        <UsageCount Value="73"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="19"/>
+        <CursorPos X="17" Y="31"/>
+        <UsageCount Value="76"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -37,13 +36,24 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="srvVars"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="8"/>
-        <CursorPos X="22" Y="38"/>
-        <UsageCount Value="73"/>
+        <TopLine Value="59"/>
+        <CursorPos X="23" Y="68"/>
+        <UsageCount Value="76"/>
         <Loaded Value="True"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="accmanager.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="accManager"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="28"/>
+        <CursorPos X="24" Y="36"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit4>
     </Units>
-    <JumpHistory Count="12" HistoryIndex="11">
+    <JumpHistory Count="17" HistoryIndex="16">
       <Position1>
         <Filename Value="test1.lpr"/>
       </Position1>
@@ -91,6 +101,26 @@
         <Filename Value="dbmanager.pas"/>
         <Caret Line="66" Column="45" TopLine="55"/>
       </Position12>
+      <Position13>
+        <Filename Value="accmanager.pas"/>
+        <Caret Line="40" Column="16" TopLine="25"/>
+      </Position13>
+      <Position14>
+        <Filename Value="srvvars.pas"/>
+        <Caret Line="40" TopLine="23"/>
+      </Position14>
+      <Position15>
+        <Filename Value="test1.lpr"/>
+        <Caret Line="10" Column="6"/>
+      </Position15>
+      <Position16>
+        <Filename Value="accmanager.pas"/>
+        <Caret Line="35" Column="26" TopLine="26"/>
+      </Position16>
+      <Position17>
+        <Filename Value="srvvars.pas"/>
+        <Caret Line="68" Column="23" TopLine="59"/>
+      </Position17>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

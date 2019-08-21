@@ -15,9 +15,13 @@ type
     fField: TField;
   public
     procedure LoadConfig;
+    procedure LoadAccounts;
     constructor Create;
     destructor Destroy;
   end;
+
+var
+  dbm: TDBMgr;
 
 implementation
 
@@ -46,6 +50,7 @@ begin
   fQuery.Close;
 
   // Fill up variables
+  // 1. Mail verification fields
   with VerifyMail do begin
     Subject:=GetConfigValue(cfg_Verify_Subject);
     Lines[1]:=GetConfigValue(cfg_Verify_Line1);
@@ -53,6 +58,11 @@ begin
     Lines[3]:=GetConfigValue(cfg_Verify_Line3);
     Url:=GetConfigValue(cfg_verify_url);
   end;
+end;
+
+procedure TDBMgr.LoadAccounts;
+begin
+
 end;
 
 constructor TDBMgr.Create;
@@ -79,6 +89,12 @@ begin
   fConn.Free;
   inherited Destroy;
 end;
+
+initialization
+  dbm:=TDBMgr.Create;
+
+finalization
+  dbm.Free;
 
 end.
 
