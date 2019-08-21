@@ -8,7 +8,8 @@ What does it contain:
  - srvConsts.pas - server constants
  - dbManager.pas - custom DB manager with MySQL 5.7 support (other DBs will be added ASAP (or never))
  - test1.lpr - initial tests (connect to db etc)
- - dump-testdb-/somekindofdatestamp/.sql - dump of test DB 
+ - dump-testdb.sql - dump of test DB
+ - accManager.pas - account management
 
 Is it builds?
  - yes (linux-i386, linux-x86_64, win32, win64)
