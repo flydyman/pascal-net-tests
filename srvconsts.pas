@@ -16,6 +16,7 @@ const
   db_user = 'test';
   db_pass = 'testtest';
   db_conf = 'config';
+  db_accs = 'accounts';
 
 
   // 2. Config values to simplify searching

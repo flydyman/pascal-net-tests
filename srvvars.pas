@@ -20,6 +20,7 @@ type
     isBanned:boolean;
     isBlocked:boolean;
     isOnline:boolean;
+    acLevel: byte;
     LastIP:string;
     RegDate: string;
     LastDate: string;
@@ -48,8 +49,14 @@ var
   Accounts: TAccList;
 
 function GetConfigValue(Parameter: string):string;
+function GetAccValue(Parameter: string):string;
 
 implementation
+
+function GetAccValue(Parameter: string):string;
+begin
+  //
+end;
 
 function TAccList.Get(i:integer):PAccount;
 begin

@@ -7,8 +7,9 @@
       <Unit0>
         <Filename Value="test1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="6" Y="10"/>
-        <UsageCount Value="76"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="20" Y="11"/>
+        <UsageCount Value="84"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -16,9 +17,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="dbManager"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="83"/>
-        <CursorPos X="6" Y="97"/>
-        <UsageCount Value="76"/>
+        <TopLine Value="74"/>
+        <CursorPos X="37" Y="82"/>
+        <UsageCount Value="84"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -26,9 +27,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="srvConsts"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="19"/>
-        <CursorPos X="17" Y="31"/>
-        <UsageCount Value="76"/>
+        <TopLine Value="20"/>
+        <CursorPos X="22" Y="32"/>
+        <UsageCount Value="84"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -36,24 +37,23 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="srvVars"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="59"/>
-        <CursorPos X="23" Y="68"/>
-        <UsageCount Value="76"/>
+        <TopLine Value="12"/>
+        <CursorPos X="19" Y="23"/>
+        <UsageCount Value="84"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="accmanager.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="accManager"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="28"/>
-        <CursorPos X="24" Y="36"/>
-        <UsageCount Value="23"/>
+        <TopLine Value="31"/>
+        <CursorPos X="19" Y="56"/>
+        <UsageCount Value="31"/>
         <Loaded Value="True"/>
       </Unit4>
     </Units>
-    <JumpHistory Count="17" HistoryIndex="16">
+    <JumpHistory Count="19" HistoryIndex="18">
       <Position1>
         <Filename Value="test1.lpr"/>
       </Position1>
@@ -121,6 +121,14 @@
         <Filename Value="srvvars.pas"/>
         <Caret Line="68" Column="23" TopLine="59"/>
       </Position17>
+      <Position18>
+        <Filename Value="accmanager.pas"/>
+        <Caret Line="36" Column="24" TopLine="28"/>
+      </Position18>
+      <Position19>
+        <Filename Value="dbmanager.pas"/>
+        <Caret Line="95" Column="38" TopLine="82"/>
+      </Position19>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

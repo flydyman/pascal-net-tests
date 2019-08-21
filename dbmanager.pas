@@ -61,8 +61,45 @@ begin
 end;
 
 procedure TDBMgr.LoadAccounts;
+var
+  i,j: longint;
+  acc: TAccount;
+  add: boolean;
+  tmp: array of array [0..10] of string;
 begin
+  fQuery.SQL.Text:='select * from '+db_accs;
+  fQuery.Open;
+  i:=0;
+  // Fetching
+  /// TODO: try/except must be added
+  SetLength(tmp,fQuery.RecordCount);
 
+  while not fQuery.EOF do begin
+    j:=0;
+    add:=false;
+    for fField in fQuery.Fields do begin
+      if fField.IsNull then tmp[i,j]:='NULL'
+        else tmp[i,j]:=fField.Value;
+
+
+      Inc(j);
+    end;
+
+    fQuery.Next;
+    Inc(i);
+  end;
+  // Close Query
+  fQuery.Close;
+
+  // Fill up variables
+  // 1. Mail verification fields
+  with VerifyMail do begin
+    Subject:=GetConfigValue(cfg_Verify_Subject);
+    Lines[1]:=GetConfigValue(cfg_Verify_Line1);
+    Lines[2]:=GetConfigValue(cfg_Verify_Line2);
+    Lines[3]:=GetConfigValue(cfg_Verify_Line3);
+    Url:=GetConfigValue(cfg_verify_url);
+  end;
 end;
 
 constructor TDBMgr.Create;

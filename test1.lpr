@@ -8,5 +8,6 @@ begin
   WriteLn('Network testing suit: Test1');
   WriteLn('More info at https://github.com/flydyman/pascal-net-tests');
   dbm.LoadConfig;
+  dbm.LoadAccounts;
 end.
 
