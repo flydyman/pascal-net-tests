@@ -17,6 +17,9 @@ type
     destructor Destroy; override;
   end;
 
+var
+  AccountManager: TAccMgr;
+
 implementation
 
 // TAccMgr
@@ -58,6 +61,12 @@ begin
   Accounts.Free;
   inherited Destroy;
 end;
+
+initialization
+  AccountManager := TAccMgr.Create;
+
+finalization
+  AccountManager.Free;
 
 end.
 
