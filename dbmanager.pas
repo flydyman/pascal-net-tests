@@ -32,8 +32,7 @@ procedure TDBMgr.LoadConfig;
 var
   i,j: longint;
 begin
-  // Load Config                  
-  /// TODO: try/except must be added
+  // Load Config
   try
     fQuery.SQL.Text:='select * from '+db_conf;
     fQuery.Open;
@@ -71,16 +70,11 @@ procedure TDBMgr.LoadAccounts;
 var
   i,j: longint;
   acc: TAccount;
-  //pacc: PAccount;
   p: pointer;
-begin                
-  /// TODO: try/except must be added
+begin
   try
     fQuery.SQL.Text:='select * from '+db_accs;
     fQuery.Open;
-    //write('Getting mem... ');
-    //GetMem(Pacc,sizeof(acc));
-    //WriteLn('Done.');
     // Fetching
     while not fQuery.EOF do begin
       acc:= TAccount.Create;
@@ -95,12 +89,7 @@ begin
       acc.mail:='';
       acc.pass:='';
       acc.RegDate:='';
-
-      //pAcc:=nil;
       for fField in fQuery.Fields do begin
-      // if not(fField.IsNull) then
-      //  if fField.IsNull then tmp[i,j]:='NULL'
-      //    else tmp[i,j]:=fField.Value;
         Case fField.FieldName of
           acc_ID: if not(fField.IsNull) then acc.id:=fField.Value;
           acc_Mail:  if not(fField.IsNull) then acc.mail:=fField.Value;
@@ -115,12 +104,8 @@ begin
         end;
       end;
       WriteLn('Account "',acc.mail,'" is gathered');
-      //New(pacc);
-      //pacc^:=acc;
-      //WriteLn('Acc -> PAcc');
       Accounts.Add(acc);
       WriteLn('Account added');
-      //acc.Free;
       fQuery.Next;
     end;
     // Close Query
@@ -134,13 +119,6 @@ begin
     on E: Exception do
       WriteLn(e.ClassName,' : ',e.Message,' > ', e.UnitName);
   end;
-
-  // Fill up variables
-  // Accounts
-  //for i:=0 to Accounts.Count-1 do
-  //begin
-  //  WriteLn('Loaded: ',Accounts.Items[i]^.mail);
-  //end;
 end;
 
 constructor TDBMgr.Create;

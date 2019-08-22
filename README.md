@@ -10,6 +10,7 @@ What does it contain:
  - test1.lpr - initial tests (connect to db etc)
  - dump-testdb.sql - dump of test DB
  - accManager.pas - account management
+ - connMgr.pas - serverside socket manager
 
 Is it builds?
  - yes (linux-i386, linux-x86_64, win32, win64)

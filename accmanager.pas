@@ -9,8 +9,6 @@ uses
 
 type
   TAccMgr = class
-  protected
-    //Accounts: TList;
   public
     procedure Run;
     constructor Create;
@@ -50,7 +48,7 @@ end;
 
 constructor TAccMgr.Create;
 begin
-  Accounts := TAccList.Create;
+  Accounts := TList.Create;
   //Load accounts from DB
   dbm.LoadAccounts;
 end;

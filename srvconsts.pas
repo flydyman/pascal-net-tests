@@ -44,6 +44,9 @@ const
   acc_LastIP = 'last_ip';
   acc_isOnline = 'isOnline';
 
+  // 5. Server settings
+  srv_port = 54312;
+
 implementation
 
 end.
