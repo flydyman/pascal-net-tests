@@ -12,7 +12,7 @@ type
   // y - cols
   TConfigLines = array of array [0..2] of string;
 
-  TAccount = record
+  TAccount = packed record
     id: int64;
     mail: string;
     pass: string;
@@ -51,17 +51,8 @@ var
   Accounts: TAccList;
 
 function GetConfigValue(Parameter: string):string;
-function GetAccValue(Parameter: string; index: longint):string;
 
 implementation
-
-function GetAccValue(Parameter: string; index: longint):string;
-var
-  res: string;
-begin
-  res:= '';
-  GetAccValue:=res;
-end;
 
 function TAccList.Get(i:integer):PAccount;
 begin

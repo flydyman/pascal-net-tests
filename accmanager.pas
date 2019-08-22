@@ -14,7 +14,7 @@ type
   public
     procedure Run;
     constructor Create;
-    destructor Destroy;
+    destructor Destroy; override;
   end;
 
 implementation
@@ -30,8 +30,8 @@ begin
   //loop
   while ServerStatus = ss_Run do begin
     // Check accounts online
-    // if not -> Save 'LastLogin' and free pointer at List
-    for i:= 0 to Accounts.count do
+    // if not -> Save 'LastLogin' to DB
+    for i:= 0 to Accounts.count-1 do
     begin
 
       Sleep (0); // Switch threads

@@ -5,6 +5,9 @@ unit dbManager;
 interface
 
 uses
+  {$IFDEF UNIX}
+  cthreads, cmem,
+  {$ENDIF}
   Classes, SysUtils, mysql57conn, srvConsts, srvVars, db, sqldb;
 
 type
@@ -17,7 +20,7 @@ type
     procedure LoadConfig;
     procedure LoadAccounts;
     constructor Create;
-    destructor Destroy;
+    destructor Destroy; override;
   end;
 
 var
@@ -65,6 +68,7 @@ var
   i,j: longint;
   acc: TAccount;
   pacc: PAccount;
+  p: pointer;
 begin
   fQuery.SQL.Text:='select * from '+db_accs;
   fQuery.Open;
@@ -101,8 +105,11 @@ begin
         acc_Registered: if not(fField.IsNull) then acc.RegDate:=fField.Value;
       end;
     end;
+    WriteLn('Account "',acc.mail,'" is gathered');
     pacc^:=acc;
-    Accounts.Add(pAcc);
+    WriteLn('//p:=Getmem(sizeof(Acc));');
+    Accounts.Add(pacc);
+    WriteLn('Account added');
     fQuery.Next;
   end;
   // Close Query
@@ -112,7 +119,7 @@ begin
   // Accounts
   for i:=0 to Accounts.Count-1 do
   begin
-    WriteLn(Accounts.Items[i]^.mail);
+    WriteLn('Loaded: ',Accounts.Items[i]^.mail);
   end;
 end;
 
