@@ -9,13 +9,14 @@ uses
 
 type
   TAccMgr = class
-  protected
-    //Accounts: TList;
   public
     procedure Run;
     constructor Create;
     destructor Destroy; override;
   end;
+
+var
+  AccountManager: TAccMgr;
 
 implementation
 
@@ -47,7 +48,7 @@ end;
 
 constructor TAccMgr.Create;
 begin
-  Accounts := TAccList.Create;
+  Accounts := TList.Create;
   //Load accounts from DB
   dbm.LoadAccounts;
 end;
@@ -58,6 +59,12 @@ begin
   Accounts.Free;
   inherited Destroy;
 end;
+
+initialization
+  AccountManager := TAccMgr.Create;
+
+finalization
+  AccountManager.Free;
 
 end.
 
