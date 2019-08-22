@@ -71,7 +71,7 @@ procedure TDBMgr.LoadAccounts;
 var
   i,j: longint;
   acc: TAccount;
-  pacc: PAccount;
+  //pacc: PAccount;
   p: pointer;
 begin                
   /// TODO: try/except must be added
@@ -83,6 +83,7 @@ begin
     //WriteLn('Done.');
     // Fetching
     while not fQuery.EOF do begin
+      acc:= TAccount.Create;
       Acc.id:=0;
       Acc.acLevel:=0;
       acc.isBanned:=false;
@@ -114,10 +115,12 @@ begin
         end;
       end;
       WriteLn('Account "',acc.mail,'" is gathered');
-      pacc:=@acc;
-      WriteLn('Acc -> PAcc');
-      Accounts.Add(pacc);
+      //New(pacc);
+      //pacc^:=acc;
+      //WriteLn('Acc -> PAcc');
+      Accounts.Add(acc);
       WriteLn('Account added');
+      //acc.Free;
       fQuery.Next;
     end;
     // Close Query
@@ -125,11 +128,11 @@ begin
   except
     //WriteLn('MySQL error at accounts');
     on E: ESQLDatabaseError do
-      WriteLn(e.ClassName,' : ',e.Message);
+      WriteLn(e.ClassName,' : ',e.Message,' > ', e.UnitName);
     on E: EAccessViolation do
-      WriteLn(e.ClassName, ' : ',e.Message);
+      WriteLn(e.ClassName, ' : ',e.Message, ' > ', e.UnitName);
     on E: Exception do
-      WriteLn(e.ClassName,' : ',e.Message);
+      WriteLn(e.ClassName,' : ',e.Message,' > ', e.UnitName);
   end;
 
   // Fill up variables

@@ -12,7 +12,7 @@ type
   // y - cols
   TConfigLines = array of array [0..2] of string;
 
-  TAccount = packed record
+  TAccount = class
     id: int64;
     mail: string;
     pass: string;
@@ -25,15 +25,15 @@ type
     RegDate: string;
     LastDate: string;
   end;
-  PAccount = ^TAccount;
+  //PAccount = ^TAccount;
 
   TAccList = class (TList)
   private
-    function Get(i: integer):PAccount;
+    function Get(i: integer):TAccount;
   public
     destructor Destroy; override;
-    function Add(p: PAccount): integer;
-    property Items [i:integer]: PAccount read Get; default;
+    function Add(p: TAccount): integer;
+    property Items [i:integer]: TAccount read Get; default;
   end;
 
   TVerifyMail = record
@@ -48,18 +48,18 @@ var
   VerifyMail: TVerifyMail;
   ConfigLines: TConfigLines;
   ServerStatus: byte = 0;
-  Accounts: TAccList;
+  Accounts: TList;//TAccList;
 
 function GetConfigValue(Parameter: string):string;
 
 implementation
 
-function TAccList.Get(i:integer):PAccount;
+function TAccList.Get(i:integer):TAccount;
 begin
-  Result:= PAccount (inherited Get(i));
+  Result:= TAccount (inherited Get(i));
 end;
 
-function TAccList.Add(p:PAccount):integer;
+function TAccList.Add(p:TAccount):integer;
 begin
   Result := inherited Add(p);
 end;
@@ -69,7 +69,8 @@ var
   i: integer;
 begin
   for i:=0 to Count -1 do
-    Freemem(Items[i]);
+    //Freemem(Items[i]);
+    TAccount(Items[i]).Free;
   inherited Destroy;
 end;
 
