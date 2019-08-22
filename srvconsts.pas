@@ -31,6 +31,19 @@ const
   ss_Run = 1;
   ss_Exiting = 2;
 
+  // 4. Accounts values
+  acc_ID = 'id';
+  acc_Mail = 'email';
+  acc_Pass = 'pass';
+  acc_isVerified = 'isVerified';
+  acc_isBlocked = 'isBlocked';
+  acc_isBanned = 'isBanned';
+  acc_acLevel = 'acc_Level';
+  acc_Registered = 'reg_date';
+  acc_LastLogin = 'last_login';
+  acc_LastIP = 'last_ip';
+  acc_isOnline = 'isOnline';
+
 implementation
 
 end.

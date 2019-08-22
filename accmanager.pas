@@ -33,13 +33,7 @@ begin
     // if not -> Save 'LastLogin' and free pointer at List
     for i:= 0 to Accounts.count do
     begin
-      if Accounts.Items[i]^.isOnline = false then begin
-        //Save to db
 
-        //...and delete
-        Accounts.delete (i);
-        //Dec(i);
-      end;
       Sleep (0); // Switch threads
     end;
 

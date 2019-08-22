@@ -13,14 +13,14 @@ type
   TConfigLines = array of array [0..2] of string;
 
   TAccount = record
-    id: longword;
+    id: int64;
     mail: string;
     pass: string;
     isVerified:boolean;
     isBanned:boolean;
     isBlocked:boolean;
     isOnline:boolean;
-    acLevel: byte;
+    acLevel: integer;
     LastIP:string;
     RegDate: string;
     LastDate: string;
@@ -41,6 +41,8 @@ type
     Lines: array [1..3] of string;
     URL: string;
   end;
+  //TDBLList = array of array of string;
+  //PDBLList = ^TDBLList;
 
 var
   VerifyMail: TVerifyMail;
@@ -49,13 +51,16 @@ var
   Accounts: TAccList;
 
 function GetConfigValue(Parameter: string):string;
-function GetAccValue(Parameter: string):string;
+function GetAccValue(Parameter: string; index: longint):string;
 
 implementation
 
-function GetAccValue(Parameter: string):string;
+function GetAccValue(Parameter: string; index: longint):string;
+var
+  res: string;
 begin
-  //
+  res:= '';
+  GetAccValue:=res;
 end;
 
 function TAccList.Get(i:integer):PAccount;
@@ -79,7 +84,7 @@ end;
 
 function GetConfigValue(Parameter: string):string;
 var
-  i: word;
+  i: longint;
   res: string;
 begin
   res:='';
