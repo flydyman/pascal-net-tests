@@ -37,7 +37,7 @@ var
   ConfigLines: TConfigLines;
   ServerStatus: byte = 0;
   Accounts: TList;
-  //Server: TServer;
+  //Srv_Thread: word;
 
 function GetConfigValue(Parameter: string):string;
 

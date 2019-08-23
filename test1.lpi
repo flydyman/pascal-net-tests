@@ -122,7 +122,7 @@
       <FormatVersion Value="2"/>
       <Modes Count="0"/>
     </RunParams>
-    <Units Count="6">
+    <Units Count="7">
       <Unit0>
         <Filename Value="test1.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -152,6 +152,10 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="connMgr"/>
       </Unit5>
+      <Unit6>
+        <Filename Value="test2.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit6>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

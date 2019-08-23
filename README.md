@@ -12,6 +12,11 @@ What does it contain:
  - accManager.pas - account management
  - connMgr.pas - serverside socket manager
 
+Requirements:
+ - lnet v0.6 - place in upper directory out of source, f.e. if you cloned this repository in
+ ~/scr/pascal-net-tests, place lnet like ~/src/lnet
+ - you can modify all pathes in Lazarus IDE (Project settings, Ctrl+Shift+F11)
+
 Is it builds?
  - yes (linux-i386, linux-x86_64, win32, win64)
  
