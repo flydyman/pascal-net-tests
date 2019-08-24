@@ -25,7 +25,7 @@
         <Filename Value="srvconsts.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="srvConsts"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="35"/>
         <CursorPos X="20" Y="48"/>
         <UsageCount Value="136"/>
@@ -64,10 +64,9 @@
       <Unit6>
         <Filename Value="test2.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="14"/>
         <UsageCount Value="29"/>
-        <Loaded Value="True"/>
       </Unit6>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
