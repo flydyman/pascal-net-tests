@@ -47,6 +47,29 @@ const
   // 5. Server settings
   srv_port = 54312;
 
+  // 6. Parser-to-server commands
+  /// TODO: move to DB cause it's MMORPG relevant
+  msg_Idle = 'idl';
+  msg_Move = 'mov';
+  msg_Attack = 'att';
+  msg_Skill = 'skl';
+  msg_Interract = 'int';
+  msg_Teleport = 'tel';
+  msg_Say = 'say';
+  msg_Talk = 'tal';
+  msg_Send = 'sen';
+  msg_BroadCast = 'bct';
+  msg_MakeParty = 'mpt';
+  msg_JoinParty = 'jpt';
+  msg_LeaveParty = 'lpt';
+  msg_DisbandParty = 'dpt';
+  msg_GetItem = 'git';
+  msg_DropItem = 'dit';
+  msg_UseItem = 'uit';
+  msg_MoveItem = 'mit';
+  msg_Unknown = '';
+  msg_Quit = 'qui';
+
 implementation
 
 end.
