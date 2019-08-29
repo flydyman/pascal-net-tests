@@ -5,7 +5,7 @@ unit accManager;
 interface
 
 uses
-  Classes, SysUtils, md5, srvVars, srvConsts, dbManager;
+  Classes, SysUtils, md5, srvVars, srvConsts, dbManager, game_types;
 
 type
   TAccMgr = class

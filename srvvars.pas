@@ -5,15 +5,9 @@ unit srvVars;
 interface
 
 uses
-  Classes, SysUtils, srvConsts, strings;
+  Classes, SysUtils, srvConsts, strings, game_types;
 
 type
-  // Message system
-  TMessage = record
-    id: string[3];
-    arg_s: array of string;
-  end;
-
   // x - rows
   // y - cols
   TConfigLines = array of array [0..2] of string;

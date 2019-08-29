@@ -67,6 +67,9 @@ const
   msg_DropItem = 'dit';
   msg_UseItem = 'uit';
   msg_MoveItem = 'mit';
+
+  msg_Login = 'lin';
+  msg_logout = 'lou';
   msg_Unknown = '';
   msg_Quit = 'qui';
 
