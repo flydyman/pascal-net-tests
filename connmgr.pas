@@ -11,6 +11,7 @@ uses
   game_types;
 
 type
+
   TServer = class
   private
     //fConn: TLTCP;
