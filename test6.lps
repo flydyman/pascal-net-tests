@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="11"/>
+    <BuildModes Active="lin64"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="test6.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="2" Y="3"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="10" HistoryIndex="9">
+      <Position1>
+        <Filename Value="test6.lpr"/>
+        <Caret Line="7" Column="18"/>
+      </Position1>
+      <Position2>
+        <Filename Value="test6.lpr"/>
+        <Caret Line="36" Column="20" TopLine="17"/>
+      </Position2>
+      <Position3>
+        <Filename Value="test6.lpr"/>
+        <Caret Line="18" Column="38" TopLine="6"/>
+      </Position3>
+      <Position4>
+        <Filename Value="test6.lpr"/>
+        <Caret Line="19" Column="20" TopLine="8"/>
+      </Position4>
+      <Position5>
+        <Filename Value="test6.lpr"/>
+        <Caret Line="6" TopLine="23"/>
+      </Position5>
+      <Position6>
+        <Filename Value="test6.lpr"/>
+        <Caret Line="17" Column="35" TopLine="15"/>
+      </Position6>
+      <Position7>
+        <Filename Value="test6.lpr"/>
+        <Caret Line="11" Column="39"/>
+      </Position7>
+      <Position8>
+        <Filename Value="test6.lpr"/>
+        <Caret Line="30" Column="27" TopLine="14"/>
+      </Position8>
+      <Position9>
+        <Filename Value="test6.lpr"/>
+        <Caret Line="17" Column="31" TopLine="4"/>
+      </Position9>
+      <Position10>
+        <Filename Value="test6.lpr"/>
+        <Caret Line="52" Column="15" TopLine="31"/>
+      </Position10>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

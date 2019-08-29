@@ -11,6 +11,7 @@ What does it contain:
  - dump-testdb.sql - dump of test DB
  - accManager.pas - account management
  - connMgr.pas - serverside socket manager
+ - test6 and test6cli - small server and client console apps (made for tests, don't need any commits at future)
 
 Requirements:
  - lnet v0.6 - place in upper directory out of source, f.e. if you cloned this repository in
